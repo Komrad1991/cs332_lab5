@@ -4,9 +4,6 @@ using Avalonia.Controls.Primitives;
 using Avalonia.Layout;
 using Avalonia.Media;
 using Avalonia.Threading;
-using System.Drawing;
-using System.Reflection;
-using System.Reflection.Metadata;
 
 namespace FractalApp.Parts;
 
@@ -171,7 +168,7 @@ public sealed class Part2TerrainView : UserControl
         Maximum = 12,
         Value = 8,
         Increment = 1,
-        Width = 90
+        Width = 180
     };
     private readonly NumericUpDown _roughness = new()
     {
@@ -179,7 +176,7 @@ public sealed class Part2TerrainView : UserControl
         Maximum = 0.85m,
         Value = 0.55m,
         Increment = 0.01m,
-        Width = 90
+        Width = 180
     };
     private readonly NumericUpDown _initialDisplacement = new()
     {
@@ -187,7 +184,7 @@ public sealed class Part2TerrainView : UserControl
         Maximum = 3.0m,
         Value = 1.0m,
         Increment = 0.1m,
-        Width = 90
+        Width = 180
     };
     private readonly NumericUpDown _seed = new()
     {
@@ -195,7 +192,7 @@ public sealed class Part2TerrainView : UserControl
         Maximum = 999999,
         Value = 42,
         Increment = 1,
-        Width = 100
+        Width = 200
     };
     private readonly Slider _stepSlider = new()
     {

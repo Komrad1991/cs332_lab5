@@ -3,8 +3,6 @@ using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Layout;
 using Avalonia.Media;
-using System.Drawing;
-using System.Reflection.Metadata;
 
 namespace FractalApp.Parts;
 

@@ -296,7 +296,7 @@ public sealed class LSystemCanvas : Control
          Brushes.White,
          new Rect(0, 0, Bounds.Width, Bounds.Height));
 
-      if (Segments.Count == 0 Bounds.Width < 4 Bounds.Height < 4)
+        if (Segments.Count == 0 || Bounds.Width < 4 || Bounds.Height < 4)
       return;
 
       var minX = Segments.Min(s => Math.Min(s.Start.X, s.End.X));
@@ -377,7 +377,7 @@ public sealed class Part1View : UserControl
       Maximum = 7,
       Value = 4,
       Increment = 1,
-      Width = 90
+      Width = 180
    };
 
    private readonly NumericUpDown _randomAngle = new()
@@ -386,7 +386,7 @@ public sealed class Part1View : UserControl
       Maximum = 45,
       Value = 0,
       Increment = 1,
-      Width = 90
+      Width = 180
    };
 
    private readonly NumericUpDown _randomLength = new()
@@ -395,7 +395,7 @@ public sealed class Part1View : UserControl
       Maximum = 50,
       Value = 0,
       Increment = 1,
-      Width = 90
+      Width = 180
    };
 
    private readonly TextBlock _info = new() { Margin = new Thickness(8, 4) };
@@ -566,7 +566,7 @@ public sealed class Part1TreeView : UserControl
       Maximum = 6,
       Value = 5,
       Increment = 1,
-      Width = 90
+      Width = 180
    };
 
    private readonly NumericUpDown _randomAngle = new()
@@ -575,7 +575,7 @@ public sealed class Part1TreeView : UserControl
       Maximum = 35,
       Value = 10,
       Increment = 1,
-      Width = 90
+      Width = 180
    };
 
    private readonly NumericUpDown _randomLength = new()
@@ -584,7 +584,7 @@ public sealed class Part1TreeView : UserControl
       Maximum = 30,
       Value = 6,
       Increment = 1,
-      Width = 90
+      Width = 180
    };
 
    private readonly NumericUpDown _baseThickness = new()
@@ -593,7 +593,7 @@ public sealed class Part1TreeView : UserControl
       Maximum = 25,
       Value = 10,
       Increment = 0.5m,
-      Width = 90
+      Width = 180
    };
 
    private readonly NumericUpDown _tipThickness = new()
@@ -602,7 +602,7 @@ public sealed class Part1TreeView : UserControl
       Maximum = 8,
       Value = 1.2m,
       Increment = 0.1m,
-      Width = 90
+      Width = 180
    };
 
    private readonly NumericUpDown _seed = new()
@@ -611,7 +611,7 @@ public sealed class Part1TreeView : UserControl
       Maximum = 999999,
       Value = 42,
       Increment = 1,
-      Width = 100
+      Width = 200
    };
 
    private readonly TextBlock _info = new() { Margin = new Thickness(8, 4) };

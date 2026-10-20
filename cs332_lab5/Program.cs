@@ -54,19 +54,19 @@ public sealed class MainWindow : Window
         tabs.Items.Add(new TabItem
         {
             Header = "1b. Фрактальное дерево",
-            Content = new Part2TreeView()
+            Content = new Part1TreeView()      
         });
 
         tabs.Items.Add(new TabItem
         {
             Header = "2. Midpoint displacement",
-            Content = new Part3TerrainView()
+            Content = new Part2TerrainView()   
         });
 
         tabs.Items.Add(new TabItem
         {
             Header = "3. Кубические Безье",
-            Content = new Part4BezierView()
+            Content = new Part3BezierView()    
         });
 
         Content = tabs;
